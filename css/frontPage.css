@@ -13,24 +13,35 @@ li{
 }
 .left{
 
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 15px;
   float: left;
   display: inline;
 }
+.left li:first-child::before{
+  content: url(../img/2.png);
+  width: 12px;
+  height: 13px;
+}
 .right{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 50px;
   float: right;
 }
 body{
   font-family:  Helvetica ;
-  background-color: yellow;
+
+ background-size: cover;
+ background-image: url(../img/background.jpg);
 }
 .welcome{
+  color: white;
   margin-top: 70px;
   
   width: 475px;
   float: left;
-  margin-left: 150px;
+  margin-left: 0px;
 }
 .forms{
   float: right;
@@ -38,26 +49,49 @@ body{
   margin-top: 70px;
 }
 .form1{
+  color:  rgba(81, 203, 238, 1);
+  border-radius: 3px;
   margin-bottom: 30px;
-  padding:20px;
+padding: 16px;
 
   background-color: #FFFFFF;
-  height: 120px;
-  width: 300px;
+  height: 90px;
+  width: 290px;
 }
 
 .form2{
+
+color: rgba(81, 203, 238, 1);
+  border-radius: 3px;
 background-color: #FFFFFF;
-width: 300px;
-padding:20px;
+width: 290px;
+padding: 16px;
 }
 input{
-  border-radius: 4px;
+  width: 270px;
+  height: 15px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border:1px solid ;
+  font-size: 12px;
+
+  border-color:  #CCD6DD;
   background-color: white;
   padding: 5px;
 
 }
+input[type=checkbox]{
+  width: 5px;
+}
+.top li a{
+margin-right: 10px;
+
+}
+.left li a:first-child::before{
+  content: url('img/twitter.png');
+}
 li a{
+  color: #808080;
   text-decoration: none;
 }
 h1{
@@ -67,4 +101,47 @@ h1{
 p{
   font-size: 20px;
   margin-bottom: 100px;
+}
+.form1 input:nth-child(2){
+  width: 180px;
+}
+.form1 input:nth-child(1){
+  margin-bottom:15px; 
+}
+.h6 p{
+  float: left;
+  color: black;
+  margin-bottom: 14px;
+  margin-right: 5px;
+
+  font-weight: -2px;
+  font-size: 20px;
+}
+input:focus{
+  clear: placeholder;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);;
+}
+button{
+  border:none;
+  color:white;
+  padding: 5px;
+  font-size: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 75px;
+  background-color: #198BD1;
+  border-radius: 4px;
+}
+.form2 button{
+  background-image: linear-gradient(to bottom ,#F7A740,#EC702E);
+ margin-left: 124px;
+ width: 155px;
+
+}
+.ree{
+
+font-size: 12px;
 }
